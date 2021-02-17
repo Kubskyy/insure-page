@@ -54,9 +54,17 @@ nav ul li.last:hover {
 nav ul li {
   margin-left: 1.5em;
   color: #837d87;
+  cursor: pointer;
 }
 
 .hero {
+  min-height: 100vh;
+  margin-bottom: 5em;
+}
+
+.hero .container {
+  height: 70%;
+  width: 100%;
   background-color: #2d2640;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -64,44 +72,147 @@ nav ul li {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  position: relative;
 }
 
-.hero .desc {
+.hero .container .desc {
   width: 80%;
-  min-height: 62vh;
+  margin-bottom: 8em;
 }
 
-.hero .desc h1 {
+.hero .container .desc h1 {
   font-family: 'DM Serif Display', serif;
   width: 50%;
   color: #fafafa;
-  font-size: 4em;
+  font-size: 5em;
   font-weight: 400;
   line-height: 1;
-  margin: 3em 0 0.5em 0;
+  margin: 2.5em 0 0.5em 0;
+  position: relative;
 }
 
-.hero .desc p {
-  width: 50%;
+.hero .container .desc h1::before {
+  content: '';
+  width: 20%;
+  border-top: solid 1px #fafafa;
+  left: 0;
+  top: -20%;
+  position: absolute;
+}
+
+.hero .container .desc p {
+  width: 40%;
   color: #fafafa;
-  margin-bottom: 2em;
+  margin-bottom: 3em;
 }
 
-.hero .desc a {
+.hero .container .desc a {
   color: #fafafa;
   text-decoration: none;
   border: 1px solid #fafafa;
   padding: 0.5em 1em;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
-.hero .desc a :hover {
+.hero .container .desc a:hover {
   cursor: pointer;
+  background-color: #fafafa;
+  color: #2d2640;
 }
 
 .hero img {
   position: absolute;
   right: 10%;
   top: 25%;
+}
+
+.about {
+  min-height: 100vh;
+  width: 100%;
+}
+
+.about .container {
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.about .container h2 {
+  font-family: 'DM Serif Display', serif;
+  font-size: 5em;
+  font-weight: 400;
+  line-height: 1;
+  margin-bottom: 1em;
+}
+
+.about .container .desc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 9em;
+}
+
+.about .container .desc img {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
+.about .container .desc h3 {
+  font-size: 2em;
+  margin: 0.5em 0 0.5em 0;
+}
+
+.about .container .desc p {
+  width: 90%;
+}
+
+.about .container .desc .process,
+.about .container .desc .prices {
+  margin-right: 3em;
+}
+
+.about .container .desc .process h3,
+.about .container .desc .prices h3,
+.about .container .desc .people h3 {
+  font-family: 'DM Serif Display', serif;
+}
+
+.about .container .work-desc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 30%;
+  color: #fafafa;
+  background-color: #2d2640;
+  padding: 4em 5em;
+}
+
+.about .container .work-desc h4 {
+  font-family: 'DM Serif Display', serif;
+  font-size: 4em;
+  font-weight: 400;
+  line-height: 1;
+}
+
+.about .container .work-desc a {
+  color: #fafafa;
+  text-decoration: none;
+  border: 1px solid #fafafa;
+  padding: 0.5em 1em;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  font-size: 1.1em;
+}
+
+.about .container .work-desc a:hover {
+  cursor: pointer;
+  background-color: #fafafa;
+  color: #2d2640;
 }
 /*# sourceMappingURL=style.css.map */
