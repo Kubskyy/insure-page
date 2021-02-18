@@ -174,11 +174,13 @@ nav {
         padding: 0.5em 1em;
         transition: all 0.5s;
         font-size: 1.1em;
+        z-index: 1;
       }
       a:hover {
         cursor: pointer;
         background-color: hsl(0, 0%, 98%);
         color: hsl(256, 26%, 20%);
+        z-index: 1;
       }
       .pattern-work {
         position: absolute;

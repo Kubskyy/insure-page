@@ -234,12 +234,14 @@ nav ul li {
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
   font-size: 1.1em;
+  z-index: 1;
 }
 
 .about .container .work-desc a:hover {
   cursor: pointer;
   background-color: #fafafa;
   color: #2d2640;
+  z-index: 1;
 }
 
 .about .container .work-desc .pattern-work {
