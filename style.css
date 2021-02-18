@@ -60,6 +60,7 @@ nav ul li {
 .hero {
   min-height: 100vh;
   margin-bottom: 5em;
+  position: relative;
 }
 
 .hero .container {
@@ -120,10 +121,22 @@ nav ul li {
   color: #2d2640;
 }
 
-.hero img {
+.hero .image-intro {
   position: absolute;
   right: 10%;
-  top: 25%;
+  top: 15%;
+}
+
+.hero .pattern-right {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.hero .pattern-left {
+  position: absolute;
+  left: 0;
+  bottom: -5%;
 }
 
 .about {
@@ -143,6 +156,17 @@ nav ul li {
   font-weight: 400;
   line-height: 1;
   margin-bottom: 1em;
+  position: relative;
+  width: 50%;
+}
+
+.about .container h2:before {
+  content: '';
+  width: 25%;
+  border-top: solid 1px #2d2640;
+  left: 0;
+  top: -40%;
+  position: absolute;
 }
 
 .about .container .desc {
@@ -190,7 +214,9 @@ nav ul li {
   min-height: 30%;
   color: #fafafa;
   background-color: #2d2640;
-  padding: 4em 5em;
+  padding: 3.5em 5em;
+  position: relative;
+  overflow: hidden;
 }
 
 .about .container .work-desc h4 {
@@ -214,5 +240,78 @@ nav ul li {
   cursor: pointer;
   background-color: #fafafa;
   color: #2d2640;
+}
+
+.about .container .work-desc .pattern-work {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+footer {
+  width: 100%;
+  min-height: 35vh;
+  background-color: #e7e4e4;
+  position: relative;
+}
+
+footer .container {
+  width: 80%;
+  margin: 0 auto;
+  font-weight: 700;
+}
+
+footer .container .upper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 4em 0 2em 0;
+  border-bottom: 2px solid rgba(131, 125, 135, 0.5);
+}
+
+footer .container .upper .icon {
+  margin-left: 0.75em;
+}
+
+footer .container .lower {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer .container .lower .our-company,
+footer .container .lower .help-me,
+footer .container .lower .contact,
+footer .container .lower .others {
+  width: 25%;
+}
+
+footer .container .lower .our-company p:first-of-type,
+footer .container .lower .help-me p:first-of-type,
+footer .container .lower .contact p:first-of-type,
+footer .container .lower .others p:first-of-type {
+  color: #837d87;
+  margin: 1.5em 0;
+}
+
+footer .container .lower .our-company p:not(:first-child),
+footer .container .lower .help-me p:not(:first-child),
+footer .container .lower .contact p:not(:first-child),
+footer .container .lower .others p:not(:first-child) {
+  color: #2d2640;
+  margin-bottom: 0.75em;
+}
+
+footer .pattern-footer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  stroke: black;
 }
 /*# sourceMappingURL=style.css.map */

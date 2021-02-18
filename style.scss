@@ -41,6 +41,7 @@ nav {
 .hero {
   min-height: 100vh;
   margin-bottom: 5em;
+  position: relative;
   .container {
     height: 70%;
     width: 100%;
@@ -87,10 +88,20 @@ nav {
       }
     }
   }
-  img {
+  .image-intro {
     position: absolute;
     right: 10%;
-    top: 25%;
+    top: 15%;
+  }
+  .pattern-right {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .pattern-left {
+    position: absolute;
+    left: 0;
+    bottom: -5%;
   }
 }
 .about {
@@ -106,6 +117,16 @@ nav {
       font-weight: 400;
       line-height: 1;
       margin-bottom: 1em;
+      position: relative;
+      width: 50%;
+    }
+    h2:before {
+      content: '';
+      width: 25%;
+      border-top: solid 1px hsl(256, 26%, 20%);
+      left: 0;
+      top: -40%;
+      position: absolute;
     }
     .desc {
       display: flex;
@@ -137,7 +158,9 @@ nav {
       min-height: 30%;
       color: hsl(0, 0%, 98%);
       background-color: hsl(256, 26%, 20%);
-      padding: 4em 5em;
+      padding: 3.5em 5em;
+      position: relative;
+      overflow: hidden;
       h4 {
         font-family: 'DM Serif Display', serif;
         font-size: 4em;
@@ -157,6 +180,55 @@ nav {
         background-color: hsl(0, 0%, 98%);
         color: hsl(256, 26%, 20%);
       }
+      .pattern-work {
+        position: absolute;
+        top: 0;
+        right: 0;
+      }
     }
+  }
+}
+footer {
+  width: 100%;
+  min-height: 35vh;
+  background-color: hsl(0, 6%, 90%);
+  position: relative;
+  .container {
+    width: 80%;
+    margin: 0 auto;
+    font-weight: 700;
+    .upper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 4em 0 2em 0;
+      border-bottom: 2px solid hsla(273, 4%, 51%, 0.5);
+      .icon {
+        margin-left: 0.75em;
+      }
+    }
+    .lower {
+      display: flex;
+      .our-company,
+      .help-me,
+      .contact,
+      .others {
+        width: 25%;
+        p:first-of-type {
+          color: hsla(273, 4%, 51%, 1);
+          margin: 1.5em 0;
+        }
+        p:not(:first-child) {
+          color: hsl(256, 26%, 20%);
+          margin-bottom: 0.75em;
+        }
+      }
+    }
+  }
+  .pattern-footer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    stroke: black;
   }
 }
